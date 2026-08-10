@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<head>
+
+
+
+<!-- <link rel="stylesheet" href="style.css"> -->
+
+
+
+
+<!--internal-->
+<style>
+    /* h1{
+        text-align: center;
+        color: #16c48f;
+        background-color: red;
+    }
+    p{
+        color: #00f;
+    } */
+</style>
+
+<!--external css-->
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    
+
+<a href="about.html">About</a>
+
+
+
+<!-- h1 h2 h3 h4 h5  h6 -->
+
+
+<h1>Web Design and Development</h1>
+
+
+<h2>Web Design </h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Praesentium, quo libero. Corporis adipisci amet at.</p>
+
+<hr>
+
+<h2>Web Development </h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, quo libero. Corporis adipisci amet at.</p> 
+
+
+
+
+
+<!--  tags type
+  1-nested tag
+  2-empty tag  <hr> <br>
+
+-->
+
+
+<!-- <img src="img/Google_Icons-09-512.webp" alt="Google_Icons"> -->
+
+
+
+
+<a target="_blank" href="https://ar.wikipedia.org/wiki/%D8%A3%D8%AD%D9%85%D8%AF_%D8%B2%D9%88%D9%8A%D9%84">
+  
+<img width="500" src="img/images.jpeg" alt="dr/ahmed zewail">
+
+</a>
+
+
+
+<hr>   
+
+<!-- list 
+1-ol
+2-ul
+3-dl 
+-->
+
+
+
+<ol type="i" start="3">
+    <li>Html</li>
+    <li>css</li>
+    <li>js</li>
+    <li>react</li>
+</ol>
+
+<hr>
+
+
+<ul type="square">
+    <li>Html</li>
+
+    <li>
+        css
+        <ul>
+            <li>padding</li>
+            <li>margin</li>
+            <li>fonts</li>
+            <li>icons</li>
+        </ul>
+
+    </li>
+
+    <li>js</li>
+    <li>react</li>
+</ul>
+
+
+<hr>
+
+<dl>
+    <dt>HTML</dt>
+    <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis expedita animi facere fugit blanditiis nihil?</dd>
+</dl>
+
+
+
+<hr>
+
+
+
+<!--Tables  -->
+
+<table width="300" border="5">
+
+  <thead style="background-color: yellowgreen; color: #f00;">
+        <th colspan="2">name</th>
+        <!-- <th>age</th> -->
+        <th>gander</th>
+        <th>Title</th>
+    </thead>
+  
+
+<tbody style="color: rgb(9, 109, 112); text-align: center;">
+        <tr>
+        <td>ahmed</td>
+        <td rowspan="3">25</td>
+        <td>male</td>
+        <td>Doctor</td>
+    </tr>
+
+    <tr>
+        <td>malik</td>
+        <!-- <td>25</td> -->
+        <td>male</td>
+        <td>Doctor</td>
+    </tr>
+
+    <tr>
+        <td>mona</td>
+        <!-- <td>25</td> -->
+        <td>female</td>
+        <td>engineer</td>
+    </tr>
+</tbody>
+
+
+</table>
+
+<hr>
+<br>
+<br>
+
+<!-- Style 
+inline css 
+-->
+
+<h2 style="text-align: center; color: #16c48f;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores, quia?</h2>
+
+<!--color    hexadecimal  0123456789abcdef
+R         G        B
+00       00        00   black
+FF       Ff        FF   white
+ff       00        00  => f 0 0
+-->
+
+<hr>
+<br>
+<br>
+
+
+<!--- Forms 
+1-type   int
+2-name   x
+3-value   5
+
+int x = 5 
+
+-->
+
+
+<form>
+
+<label for="">Name:</label>
+<input type="text" name="username" required="required" placeholder="enter name"><span style="color: #f00;">*</span>
+<br>
+<br>
+<label for="">Email:</label>
+<input type="email" name="email" placeholder="enter email">
+<br>
+<br>
+
+
+<label for="">Password:</label>
+<input type="password" name="Password" placeholder="enter Password">
+<br>
+<br>
+
+<label for="">Age:</label>
+<input type="number" name="age" placeholder="enter age">
+<br>
+<br>
+
+
+
+<label for="">birthdate:</label>
+<input type="date" name="birthdate" placeholder="enter birthdate">
+<br>
+<br>
+
+<label for="">birthdate:</label>
+<input type="datetime-local" name="birthdate" placeholder="enter birthdate">
+<br>
+<br>
+
+
+<label for="">color:</label>
+<input type="color" name="color" placeholder="enter birthdate">
+<br>
+<br>
+
+
+<label for="">Image:</label>
+<input type="file" name="color" placeholder="enter birthdate">
+<br>
+<br>
+
+
+<label for="">Gender:</label>
+<input type="radio" name="gender" value="male"> <label for="">Male</label>
+<input type="radio" name="gender" value="female"> <label for="">female</label>
+<br>
+<br>
+
+<input type="radio" name="g" value="boy"> <span>boy</span>
+<input type="radio" name="g" value="girl"><span>girl</span>
+<br>
+<br>
+
+<label for="">Skills:</label>
+<input type="checkbox" name="skill" value="html"> <span>html</span>
+<input type="checkbox" name="skill" value="css"><span>css</span>
+<input type="checkbox" name="skill" value="js"><span>js</span>
+<input type="checkbox" name="skill" value="React"><span>React</span>
+<br>
+<br>
+
+
+
+<label for="">lang:</label>
+<input type="checkbox" name="lang" value="ar"> <span>ar</span>
+<input type="checkbox" name="lang" value="en"><span>en</span>
+
+<br>
+<br>
+
+<select name="Count" id="">
+    <option value="cairo">Egypt</option>
+    <option value="china">china</option>
+    <option value="tokio">tokio</option>
+    <option value="sorya">sorya</option>
+</select>
+
+
+<br>
+<br>
+<button type="submit">ok</button>
+</form>
+
+
+
+<hr>
+<br>
+<br>
+
+
+<!-- Media 
+1-audio
+2-video 
+3-iframe
+-->
+
+
+
+<audio controls muted autoplay loop>
+    <source src="img/001.mp3">
+</audio>
+
+
+<video controls autoplay muted loop width="300">
+    <source src="img/WhatsApp Video 2024-05-04 at 6.33.40 PM.mp4">
+</video>
+
+
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3434.6462682492784!2d31.508258727572017!3d30.587529636641282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f7f0f4dc67429d%3A0xa63ff413a4a91da9!2z2KjYp9ix2KfYr9mK2LI!5e0!3m2!1sar!2seg!4v1786273756944!5m2!1sar!2seg" 
+width="650" height="450" style="border:0;" allowfullscreen="" 
+loading="lazy" referrerpolicy="strict-origin-when-cross-origin">
+</iframe>
+
+
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3434.796678935269!2d31.48832482561888!3d30.583284592842098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f7f056b5085c0d%3A0xd38cd65919dd6e31!2z2YbYp9iv2Yog2KPYrdmF2K8g2LnYsdin2KjZiiDZhNmE2YLZiNin2Kog2KfZhNmF2LPZhNit2Yc!5e0!3m2!1sar!2seg!4v1786274051023!5m2!1sar!2seg" width="600" height="450" style="border:0;" allowfullscreen="" 
+loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+<!-- 
+<iframe width="560" height="315"
+ src="https://www.youtube.com/embed/7LxA9qXUY5k?si=qgI_0sCaKYMUMWqx"
+ title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+
+
+
+
+
+
+
+
+
+<!-- CSS   
+1-internal
+2-external
+3-inline 
+-->
+
+
+
+
+
+</body>
+</html>
+

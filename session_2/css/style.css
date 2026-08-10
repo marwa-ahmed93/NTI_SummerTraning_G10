@@ -1,0 +1,60 @@
+
+
+ /* p{
+        background-color: red;
+    }
+
+    .item{
+        width: 50%;
+    } */
+.container{
+    /* background-color: blue; */
+    /* width: 90%; */
+    text-align: center;
+}
+.container span{
+    color: blue;
+}
+    .item{
+        /* background-color: rgb(154, 142, 223); */
+        width: 32.3%;
+        text-align: center;
+        color: rgb(126, 125, 125);
+        display: inline-block;
+    }
+    .item img{
+    width: 100%;
+    }
+.item button{
+    width: 20%;
+    background-color: rgb(27, 27, 187);
+    color: aliceblue;
+    border-radius: 3px;
+    border: 0;
+    padding: 5px 3px;
+}
+
+ /*  Default value 
+ width 100%
+ height auto
+ color text black
+
+  */
+
+  /*
+  inline
+  block
+  */
+  /* p{
+    background-color: blueviolet;
+    width: 30%;
+    display: inline;
+    width: 49%;
+    height: 50px;
+  }
+  a{
+    background-color: red;
+    display: block;
+    width: 20%;
+    height: 50px;
+  } */
