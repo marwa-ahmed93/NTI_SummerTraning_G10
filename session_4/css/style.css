@@ -1,0 +1,312 @@
+*{
+    box-sizing: border-box;
+    padding:0 ;
+    margin: 0;
+}
+
+.parent{
+
+}
+.pos{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(117, 117, 207,0.3);
+    overflow: auto;
+    /* position: relative;
+    right: 0;
+
+    top: 0;
+  z-index:0 ; */
+
+  /* display: none; */
+  /* visibility: hidden; */
+  /* opacity: 0.5; */
+  transform: skew(45deg);
+  margin: 100px auto;
+  
+}
+/*
+px
+%
+vh
+rem 
+em
+*/
+
+
+
+
+
+/*****************************************************/
+/*css combinators   
+spacing
+*/
+
+.comb{
+    width: 300px;
+    height: 300px;
+    background-color: green;
+    padding: 10px;
+    margin: 15px;
+  
+}
+
+/* .comb  p{
+color: #f00;
+} */
+
+.comb > p{
+color: #fff;
+}
+.comb div{
+   background-color: red; 
+   color: #fff;
+   padding: inherit;
+   margin: inherit;
+}
+
+
+/* .comb + h2{
+text-align: center;
+color: green;
+} */
+
+.comb ~ h2{
+text-align: center;
+color: green;
+}
+
+
+
+
+/*****************************************************/
+/* Icons */
+
+
+i{
+    color: red;
+    /* font-size: 25px; */
+    
+}
+ul li i{
+    color: #8e7754;
+}
+
+
+
+
+
+
+
+
+/*******************************************************/
+
+    /*   Flexbox       
+    display:inline   block   inline-block   white spacing
+    float:left right 
+
+       Flexbox    layout     p  c
+       parent
+       display:flex
+       flex-wrap: nowrap;
+       flex-direction: row;
+       flex-flow: row wrp;
+       justify-content: flex-start;   x
+       align-items: center;   y
+       align-content: center; 
+    */
+
+
+    .meals{
+    margin: 50px auto ;
+    width: 90%;
+        /* background-color: #8e7754; */
+        display: flex;
+        /* height: 150vh; */
+        /* flex-wrap: wrap;
+        flex-direction: row; */
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        /* align-content: center; */
+    }
+    .meal{
+        /* background-color: yellowgreen; */
+
+        width: 33.3%;
+        text-align: center;
+        /* display: inline-block */
+        /* float: left; */
+    padding: 15px;
+    }
+    .inner{
+   /* background-color: yellowgreen; */
+    }
+
+    .meal img{
+        width: 80%;
+    }
+
+
+
+
+    header{
+        background-image: url(../images/bg.jpg);
+        background-size: cover;
+        background-position:  center center;
+        height: 100vh;
+   
+    }
+
+.container{
+    /* background-color: gold; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 20px;
+}
+.caption{
+    /* background-color: tomato; */
+    width: 40%;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+}
+
+
+
+/*chiled 
+
+    order: 0;
+    flex:grow 
+
+    5 500   500/5 => 100
+2 + 1 +2 +0+0   => 5    500/5 =>100
+
+100*2 =>200
+100*1 => 100
+100*2 => 200
+
+
+
+
+flex-shrink 
+
+1+1+1+1+1 => 5     500   500/5 => 100
+1*100=>100    200-100 => 100
+1*100=>100    200-100 => 100
+1*100=>100    200-100 => 100
+1*100=>100    200-100 => 100
+
+*/
+
+.content{
+    margin: 50px 0;
+    background-color: #ee7935;
+    /* height: 800px; */
+    display: flex;
+    /* flex-wrap: wrap;
+    align-content: center; */
+    width: 500px;
+}
+
+
+.one{
+    width: 200px;
+    background-color: blue;
+    height: 100px;
+    /* order: 2; */
+    /* flex-grow: 2;  */
+      /* 2*100 =>200   200+100 =>300*/
+      flex-shrink: 2;
+}
+
+.two{
+     width: 200px;
+    background-color: rgb(0, 255, 149);
+    height: 100px;
+    order: 0;
+     /* flex-grow: 1; */
+        /* 1*100 =>100    100+100 =>200*/
+      flex-shrink: 1;
+
+    
+
+}
+
+.three{
+     width: 200px;
+    background-color: rgb(255, 166, 0);
+    height: 100px;
+    /* order: -1; */
+/* flex-grow: 2; */
+/*   2*100 =>200    200+100 => 300  */
+      flex-shrink: 1;
+
+
+}
+
+.four{
+     width: 200px;
+    background-color: rgb(21, 255, 0);
+    height: 100px;
+    /* order: 3; */
+
+     flex-grow: 0;
+     /* 0*100 =>0   0+100 => 100 */
+
+      flex-shrink: 3;
+
+}
+
+.five{
+      width: 200px;
+    background-color: rgb(255, 0, 221);
+    height: 100px;
+    /* order: 0; */
+flex-grow: 0;     
+ /* 0*100 =>0   0+100 => 100 */
+      flex-shrink: 1;
+
+
+}
+
+
+
+
+
+
+
+    /* nav{
+        display: flex;
+         background-color: #8e7754;
+    } */
+    nav ul{
+       background-color: rgba(0, 0, 0.4);
+        list-style-type: none;
+        display: flex;
+        justify-content: flex-end;
+        
+    }
+    ul li{
+        padding: 20px;
+        color: #fff;
+    }
+
+    @media  (max-width:800px){
+        .meal{
+            width: 100%;
+        }
+      nav ul{
+        flex-direction: column;
+        background-color: red;
+      }
+         ul li{
+            border-bottom: 3px solid #8e7754;
+            font-size: 20px;
+            text-align: center;
+         }
+    }
+
+
+
